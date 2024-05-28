@@ -13,4 +13,5 @@ return {
   { import = "astrocommunity.editing-support.multiple-cursors-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.utility.telescope-live-grep-args-nvim" },
 }

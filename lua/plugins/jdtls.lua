@@ -42,6 +42,16 @@ return {
       root_dir = root_dir,
       settings = {
         java = {
+          jdtls = {
+            ls = {
+              vmargs = "-XX:+UseParallelGC "
+                .. "-XX:GCTimeRatio=4 "
+                .. "-XX:AdaptiveSizePolicyWeight=90 "
+                .. "-Dsun.zip.disableMemoryMapping=true "
+                .. " -Xmx1G -Xms500m "
+                .. "-Xlog:disable",
+            },
+          },
           format = {
             enabled = true,
             settings = {
